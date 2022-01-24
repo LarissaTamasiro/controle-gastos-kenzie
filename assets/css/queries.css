@@ -1,0 +1,107 @@
+/* TABLETS E CELULARES GRANDES */
+@media only screen and (min-width: 600px) {
+    
+    header, main {
+        max-width: 600px;
+        margin: 20px auto;
+        display: flex;
+        align-content: center;
+    }
+    main section, header {
+        padding: 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    
+    /* SEÇÃO DE INSERÇÃO DE INFORMAÇÕES */
+    .secaoInsercaoInformacoes {
+        background-color: #45453D;
+        width: 100%;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    .containerDespesas_cabecalho {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .tituloDaDespesa, .valorDaDespesa{
+        margin-top: 60px;
+    }
+
+    
+    /* SEÇÃO DE IMPRESSÃO DE RESULTADOS */
+    .secaoImpressaoResultados {
+        background-color: #45453D;
+        width: 100%;
+    }
+    
+    .secaoImpressaoResultados div {
+        text-align: center;
+        align-items: center;
+    }
+    .secaoImpressaoResultados div h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .secaoImpressaoResultados div p {
+        font-size: 20px;
+    }
+
+}
+
+/* TABLETS MAIORES */
+@media only screen and (min-width: 768px) {
+    header {
+        max-width: 900px;
+        width: 90%;
+        justify-content: center;
+    }
+    main {
+        max-width: 900px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* SEÇÃO DE INSERÇÃO DE INFORMAÇÕES */
+    .secaoInsercaoInformacoes {
+        background-color: #45453D;
+        width: 72,5%;
+        box-sizing: border-box;
+    }
+
+
+    /* SEÇÃO DE IMPRESSÃO DE RESULTADOS */
+    .secaoImpressaoResultados {
+        width: 25%;
+        box-sizing: border-box;
+    }
+    .secaoImpressaoResultados div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        border: none;
+    }
+    .secaoImpressaoResultados div h3, .secaoImpressaoResultados div p {
+        text-align: center;
+    }
+}
+
+/* COMPUTADORES, NOTEBOOKS ETC */
+@media only screen and (min-width: 992px) {
+    main {
+        display: flexbox;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media print {
+    .secaoEntradas, .zerarDespesas, .containerDespesas_lista li img {
+        display: none;
+    }
+}

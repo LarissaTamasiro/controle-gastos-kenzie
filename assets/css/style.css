@@ -1,0 +1,223 @@
+/* CORES UTILIZADAS:
+Azul acinzentado: #8B94A3
+Azul escuro: #497285
+Verde: #06BA63
+Vermelho: #E94F37
+Vermelho-escuro: #C03221
+Cinza-claro: #D3D3D3
+Cinza: #58584E
+Cinza-escuro: #45453D
+Cinza-escuro (fundo): #32322C
+ */
+
+body {
+    background-color: #32322C;
+    color: #D3D3D3;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+header {
+    padding: 20px;
+    background-color: #45453D;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    float: left;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: 600;
+    align-content: center;
+}
+main section {
+    padding: 20px;
+}
+
+/* SEÇÃO DE IMPRESSÃO DE RESULTADOS */
+.secaoImpressaoResultados {
+    background-color: #45453D;
+    width: 100%;
+    display: flexbox;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.secaoImpressaoResultados div {
+    justify-content: space-between;
+    align-items: center;
+}
+.secaoImpressaoResultados_orcamento {
+    display: flex;
+    padding: 10px;
+    border: none;
+}
+.secaoImpressaoResultados_despesas, .secaoImpressaoResultados_saldo {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #32322C;
+}
+.secaoImpressaoResultados div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.secaoImpressaoResultados div p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.secaoImpressaoResultados_orcamento p {
+    color: #06BA63;
+}
+
+.secaoImpressaoResultados_despesas p {
+    color: #E94F37;
+}
+
+.secaoImpressaoResultados_saldo p {
+    color: #8B94A3;
+}
+
+
+/* SEÇÃO DE INSERÇÃO DE INFORMAÇÕES */
+.secaoInsercaoInformacoes {
+    background-color: #45453D;
+    width: 100%;
+    box-sizing: border-box;
+}
+.secaoInsercaoInformacoes h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.secaoInsercaoInformacoes input {
+    background-color: #58584E;
+    color: #D3D3D3;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+.calcular {
+    background-color: #497285;
+    color: #D3D3D3; 
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.zerarOrcamento, .zerarDespesas {
+    background-color: #C03221;
+    color: #D3D3D3; 
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.formularioEntradaOrcamento {
+    width: 47.5%;
+    float: left;
+}
+
+.formularioEntradaDespesa {
+    width: 47.5%;
+    float: right;
+}
+
+.formularioEntradaOrcamento h2, .formularioEntradaDespesa h2 {
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.secaoDespesas {
+    display: flexbox;
+    box-sizing: border-box;
+}
+.containerDespesas_cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.tituloDaDespesa, .valorDaDespesa{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tituloDaDespesa {
+    width: 60%;
+}
+.valorDaDespesa {
+    width: 30%;
+}
+.containerDespesas_lista li {
+    width: 100%;
+    border-top: 2px solid #32322C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #8B94A3;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.containerDespesas_lista h3 {
+    float: flex-start;
+    width: 60%;
+}
+
+.containerDespesas_lista p {
+    float: flex-start;
+    width: 30%; 
+}
+.containerDespesas_lista li img {
+    width: 16px; 
+    height: 16px;
+    float: right;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
